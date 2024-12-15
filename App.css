@@ -1,0 +1,130 @@
+/* Home.css */
+
+/* General container styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: bold;
+  color: #1d4ed8; /* Blue */
+  margin-bottom: 1.5rem;
+}
+
+/* Filter dropdown */
+select {
+  border: 1px solid #d1d5db; /* Gray-300 */
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #374151; /* Gray-700 */
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select:focus {
+  border-color: #2563eb; /* Blue-500 */
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+}
+
+/* Add Task Button */
+button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5); /* Green-400 */
+}
+
+/* Add Task Button Specific */
+button.bg-blue-500 {
+  background-color: #3b82f6; /* Blue-500 */
+  color: #fff;
+}
+
+button.bg-blue-500:hover {
+  background-color: #2563eb; /* Blue-600 */
+}
+
+/* Delete Button */
+button.bg-red-500 {
+  background-color: #ef4444; /* Red-500 */
+  color: #fff;
+}
+
+button.bg-red-500:hover {
+  background-color: #dc2626; /* Red-600 */
+}
+
+/* Table container */
+.ReactTabulator {
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+.ReactTabulator .tabulator-header {
+  background-color: #1d4ed8; /* Blue-700 */
+  color: #fff;
+}
+
+/* Table cell styling */
+.ReactTabulator .tabulator-row {
+  background-color: #f9fafb;
+}
+
+.ReactTabulator .tabulator-row:hover {
+  background-color: #e5e7eb; /* Gray-200 */
+}
+
+.ReactTabulator .tabulator-cell {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: #374151; /* Gray-700 */
+}
+
+.ReactTabulator .tabulator-cell input {
+  border: 1px solid #d1d5db; /* Gray-300 */
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  color: #374151; /* Gray-700 */
+}
+
+.ReactTabulator .tabulator-cell input:focus {
+  border-color: #2563eb; /* Blue-500 */
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+}
+
+/* Task Action Buttons */
+button.bg-red-500 {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+button.bg-red-500:hover {
+  background-color: #e11d48; /* Adjusted red hover for action clarity */
+}
+
+/* Adjusted spacing for the dropdown and button containers */
+.mb-4 {
+  margin-bottom: 1rem;
+}
